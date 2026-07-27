@@ -3,7 +3,7 @@ package Models;
 public class Compras {
     private String descCompra;
     private double limiteCredito;
-    private double valorCompra
+    private double valorCompra;
 
     public Compras(String descCompra, double limiteCredito, double valorCompra) {
         this.descCompra = descCompra;
@@ -23,5 +23,5 @@ public class Compras {
         return valorCompra;
     }
 
-    
+
 }

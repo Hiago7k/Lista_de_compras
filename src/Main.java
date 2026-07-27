@@ -24,16 +24,20 @@ class Main{
             System.out.println("Digite o valor da compra: ");
             double valorCompra = data.nextDouble();
 
+            if(valorCompra > limiteCredito){
+                System.out.println("Valor de credito insuficiente compra cancelada");
+                break;
+            };
+
         System.out.println("Digite a descrição da compra: ");
         String descCompra = data.next();
 
-
-
+        limiteCredito = limiteCredito - valorCompra;
 
         System.out.println("Digite 1 para continuar comprando 0 para parar");
         ativo = data.nextInt();
 
-        Compras compra1 = new Compras(descCompra, limiteCredito);
+        Compras compra1 = new Compras(descCompra, limiteCredito, valorCompra);
 
         cartao.adicionaComprasNalista(compra1);
 
