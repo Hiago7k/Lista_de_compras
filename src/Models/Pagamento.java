@@ -1,16 +1,19 @@
 package Models;
 
-public class Pagamento {
-    private String descCompra;
-    private double valor;
+import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.List;
 
-    public Pagamento(String descCompra, double valor) {
-        this.descCompra = descCompra;
-        this.valor = valor;
-    }
+public class Pagamento  {
+    private String nome;
+    private  Compras compra;
+    List<Compras> listaDeCompras = new ArrayList<>();
 
-    public void exibeDetalhesCompra(){
-        System.out.println(valor);
-        System.out.println(descCompra);
+
+    public void adicionaComprasNalista(Compras compra){
+        listaDeCompras.add(compra);
     };
+
+
+
 }
