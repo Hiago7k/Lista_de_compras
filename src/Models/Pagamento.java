@@ -22,8 +22,4 @@ public class Pagamento  {
     };
 
 
-    @Override
-    public String toString() {
-        return this.compra.getDescCompra() + " " + this.compra.getLimiteCredito();
-    }
 }
