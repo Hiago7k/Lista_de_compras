@@ -1,11 +1,16 @@
 package Models;
 
 public class Pagamento {
-    private String cartao;
+    private String descCompra;
     private double valor;
 
-    public Pagamento(String cartao, double valor) {
-        this.cartao = cartao;
+    public Pagamento(String descCompra, double valor) {
+        this.descCompra = descCompra;
         this.valor = valor;
     }
+
+    public void exibeDetalhesCompra(){
+        System.out.println(valor);
+        System.out.println(descCompra);
+    };
 }
