@@ -21,6 +21,7 @@ class Main{
 
         Pagamento cartao = new Pagamento();
         cartao.adicionaComprasNalista(compra1);
+        cartao.exibeComprasDaLista();
 
 
     }

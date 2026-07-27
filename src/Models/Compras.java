@@ -8,4 +8,12 @@ public class Compras {
         this.descCompra = descCompra;
         this.limiteCredito = limiteCredito;
     }
+
+    public String getDescCompra() {
+        return descCompra;
+    }
+
+    public double getLimiteCredito() {
+        return limiteCredito;
+    }
 }

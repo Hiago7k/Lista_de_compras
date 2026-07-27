@@ -14,6 +14,16 @@ public class Pagamento  {
         listaDeCompras.add(compra);
     };
 
+    public void exibeComprasDaLista(){
+        System.out.println("Exibindo seu carrinho de compras:");
+        for (var items : listaDeCompras ){
+            System.out.println(items.getDescCompra() + " " + items.getLimiteCredito());
+        };
+    };
 
 
+    @Override
+    public String toString() {
+        return this.compra.getDescCompra() + " " + this.compra.getLimiteCredito();
+    }
 }
