@@ -1,6 +1,8 @@
 package Models;
 
-public class Compras {
+import java.util.Collections;
+
+public class Compras{
     private String descCompra;
     private double limiteCredito;
     private double valorCompra;
@@ -22,6 +24,5 @@ public class Compras {
     public double getValorCompra() {
         return valorCompra;
     }
-
 
 }

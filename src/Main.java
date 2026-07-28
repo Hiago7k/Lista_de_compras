@@ -1,6 +1,7 @@
 import Models.Compras;
 import Models.Pagamento;
 
+import java.util.Collections;
 import java.util.Scanner;
 
 class Main{
@@ -40,7 +41,6 @@ class Main{
         Compras compra1 = new Compras(descCompra, limiteCredito, valorCompra);
 
         cartao.adicionaComprasNalista(compra1);
-
         }
 
         cartao.exibeComprasDaLista();

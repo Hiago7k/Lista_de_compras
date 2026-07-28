@@ -2,9 +2,11 @@ package Models;
 
 import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
-public class Pagamento  {
+public class Pagamento {
     private String nome;
     private  Compras compra;
     List<Compras> listaDeCompras = new ArrayList<>();
