@@ -44,6 +44,6 @@ class Main{
         }
 
         cartao.exibeComprasDaLista();
-
+        System.out.println("Saldo final do credito " + limiteCredito);
     }
 }

@@ -17,7 +17,7 @@ public class Pagamento  {
     public void exibeComprasDaLista(){
         System.out.println("Exibindo seu carrinho de compras:");
         for (var items : listaDeCompras ){
-            System.out.println("Limite final de credito " + items.getLimiteCredito());
+            System.out.println("Limite de credito atualizado apos compra " + items.getLimiteCredito());
             System.out.println("Items comprados " + items.getDescCompra());
             System.out.println("O valor da compra: " + items.getValorCompra());
         };
